@@ -10,7 +10,7 @@ class Config:
     def __init__(self):
         self._config: Dict[str, Any] = {
             "DEBUG": config("DEBUG", default="0", cast=bool),
-            "TELEGRAM_API_TOKEN": config("TELEGRAM_API_TOKEN")
+            "TELEGRAM_API_TOKEN": config("6089522865:AAG0vUsYSBg-BaSfiG1T5E1QTrorjoMDA4U")
         }
 
     def __getitem__(self, item: str) -> Any:
