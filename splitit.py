@@ -8,7 +8,7 @@ from singletons.config import Config
 
 def main():
     logging.basicConfig(level=logging.DEBUG if Config()["DEBUG"] else logging.INFO)
-    Bot(Config()["TELEGRAM_API_TOKEN"])
+    Bot(Config()["6089522865:AAG0vUsYSBg-BaSfiG1T5E1QTrorjoMDA4U"])
     from bot import start
     from bot import splitit
     aiogram.executor.start_polling(Bot().dispatcher, skip_updates=True)
