@@ -17,7 +17,7 @@ bot = Bot()
 def do_separate(input_file: str):
     def work():
         separator = spleeter.separator.Separator("spleeter:2stems")
-        audio_adapter = spleeter.audio.adapter.get_default_audio_adapter()
+        audio_adapter = spleeter.audio.adapter.AudioAdapter()
         waveform, _ = audio_adapter.load(
             input_file,
             offset=0,
